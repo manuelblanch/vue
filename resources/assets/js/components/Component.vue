@@ -24,4 +24,20 @@
         </div>
     </div>
 </template>
+
+<script>
+  export default {
+    name: 'AdminLTEBox',
+    data () {
+      return {
+        isCollapsed: this.collapsed,
+        isCollapsable: this.collapsable,
+        isRemovable: this.removable,
+        isLoading: this.loading,
+        isSolid: this.solid,
+        headerHaveBorder: this.borderHeader,
+        removed: false
+      }
+    },
+    
 </html>
