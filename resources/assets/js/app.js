@@ -22,3 +22,45 @@ const app = new Vue({
 });
 
 Vue.component('task', require('./components/Task.vue'));
+
+<template>
+    <div id="app">
+        <img src="./assets/logo.png">
+        <h1>{{ msg }}</h1>
+        <new></new><!--  -->
+    </div>
+</template>
+
+<script>
+    import New from './components/New.vue'; //
+    export default {
+        name: 'app',
+        components: {
+            New
+        },
+        data () {
+            return {
+                msg: 'Welcome'
+            }
+        }
+    }
+</script>
+
+<style>
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
+
+    h1, h2 {
+        font-weight: normal;
+    }
+
+    a {
+        color: #42b983;
+    }
+</style>
